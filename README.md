@@ -37,9 +37,9 @@
 
 
 -   Via Postman
-    -   Login
+    -   Login\
         ![postman-login-endpoint.png](images%2Fpostman-login-endpoint.png)
-    -   Hello World
+    -   Hello World\
         ![postman-hello-endpointus.png](images%2Fpostman-hello-endpointus.png)
 
 ***
@@ -59,12 +59,12 @@
 
     ```json
     {
-        'mowerId': MOWER_ID,
-        'x': x,
-        'y': y,
-        'time': cast your timestamp to int,
-        'state': STATE_CODE,
-        'extra': if collission specify your TEMP_IMAGE_ID(int) else ""
+        "mowerId": "MOWER_ID",
+        "x": "x",
+        "y": "y",
+        "time": "cast your timestamp to int",
+        "state": "STATE_CODE",
+        "extra": "if collission specify your TEMP_IMAGE_ID(int) else ''"
     }
     ```      
 
@@ -74,10 +74,10 @@
 
     ```json
     {
-        'id': this is the TEMP_IMAGE_ID(int) we specified earlier in 'extra' property when sending the coordinate where the collission happened,
-        'chunkAmount': specify the amount of chunks you divided your image in,
-        'chunkOffset': the number of the chunk you are sending right now P.S. Start from 0,
-        'data': chunk in bytearr encoded in base64
+        "id": "this is the TEMP_IMAGE_ID(int) we specified earlier in 'extra' property when sending the coordinate where the collission happened",
+        "chunkAmount": "specify the amount of chunks you divided your image in",
+        "chunkOffset": "the number of the chunk you are sending right now P.S. Start from 0",
+        "data": "chunk in bytearr encoded in base64"
     }
     ``` 
  
@@ -97,13 +97,13 @@
 
     ```json
     {
-        'mowerId': 'e193c17a-9c4e-4e3b-b2bc-f7a8a31a42b0',
-        'x': 1.0,
-        'y': 2.0,
-        'time': 1683234033,
-        'state': 'START',
-        'extra': '',
-        'stateId': 0
+        "mowerId": "e193c17a-9c4e-4e3b-b2bc-f7a8a31a42b0",
+        "x": 1.0,
+        "y": 2.0,
+        "time": 1683234033,
+        "state": "START",
+        "extra": "",
+        "stateId": 0
     }
     ```
     -   You can not receive the images yes -> In progress
@@ -117,10 +117,9 @@
     - This is our database.
     - Currently, it is accessible remotely.
     - To be able to access the h2-console make sure to
-      - The credentials are:`JDBC URL: jdbc:h2:file:./data/test;AUTO_SERVER=TRUE` , `username: admin`, `password: admin`
-\
+      - The credentials are: `JDBC URL: jdbc:h2:file:./data/test;AUTO_SERVER=TRUE` , `username: admin`, `password: admin`\
       ![h2-console.png](images%2Fh2-console.png)
 
 
-   -   The database interface of h2-console is pretty intuitive since it is SQL
+   -   The database interface of h2-console is pretty intuitive since it is SQL\
      ![h2-console-gui.png](images%2Fh2-console-gui.png)
