@@ -113,7 +113,7 @@
 
 ## Database access
 
--   [H2-console](http://mow-e.me:8080/swagger-ui/index.html)
+-   [H2-console](http://mow-e.me:8080/h2-console)
     - This is our database.
     - Currently, it is accessible remotely.
     - To be able to access the h2-console make sure to
