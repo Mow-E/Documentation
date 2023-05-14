@@ -1,6 +1,6 @@
 # Documentation for using the Backendus repository
 
-## The server is up and running on [mow-e.me:8080](http://mow-e.me:8080)
+## The server is up and running on [mow-e.me](http://mow-e.me)
 
 ### Recommended software for experimenting with the websockets and endpoints
 
@@ -30,7 +30,7 @@
 
 ## Endpoints
 
--   [Swagger](http://mow-e.me:8080/swagger-ui/index.html)
+-   [Swagger](http://mow-e.me/swagger-ui/index.html)
     -   It will always have the updated list of endpoints
     -   It will tell you how your requests should look like
     -   It will let you try the endpoints
@@ -51,7 +51,7 @@
 -   Authentication
     -   When establishing the connection with server we need to specify we need to specify in the header:\
     `"x-auth-token" : "YOUR TOKEN"`
-    -   Connect to address: `http://mow-e.me:8080/websocket`
+    -   Connect to address: `http://mow-e.me/websocket`
 
 -   To push the coordinates
     -   Make sure you did not miss the previous authentication step
@@ -88,7 +88,7 @@
 -   Authentication
     -   When establishing the connection with server we need to specify we need to specify in the header:\
     `"x-auth-token" : "YOUR TOKEN"`
-    -   Connect to address: `http://mow-e.me:8080/websocket`
+    -   Connect to address: `http://mow-e.me/websocket`
 
 -   To subscribe to your mowers exclusive private topic where he posts his adventure path
     -   Make sure you did not miss the previous authentication step
@@ -113,7 +113,7 @@
 
 ## Database access
 
--   [H2-console](http://mow-e.me:8080/h2-console)
+-   [H2-console](http://mow-e.me/h2-console)
     - This is our database.
     - Currently, it is accessible remotely.
     - To be able to access the h2-console make sure to
